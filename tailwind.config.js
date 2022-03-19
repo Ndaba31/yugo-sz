@@ -4,6 +4,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Fredoka', 'sans-serif']
+    },
     extend: {
       colors:{
         "primary-1": "#BCCCAE",
