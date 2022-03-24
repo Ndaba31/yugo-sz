@@ -27,3 +27,15 @@
     transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110
     duration-300 ml-3 lg:ml-5
 }
+
+.navSecondContainer{
+    @apply hidden lg:block container
+}
+
+.menuContainer{
+    @apply menu menu-horizontal p-0
+}
+
+.links{
+    @apply m-2 hover:text-accent text-primary rounded-full
+}

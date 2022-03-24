@@ -1,13 +1,9 @@
 import React from 'react'
 import s from './Navbar.module.css'
 import {FaSearch, FaCartPlus} from 'react-icons/fa'
-import { CategoryContext, ProductContext } from '../../pages'
+import { CategoryContext } from '../../pages'
 
 const Navbar = () => {
-  const products = React.useContext(ProductContext)
-  const categories = React.useContext(CategoryContext)
-
-  console.log(products, categories);
 
   return (
     <>
@@ -35,14 +31,6 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-        </div>
-        <div className='hidden lg:block container'>
-            <ul className="menu menu-horizontal p-0">
-                <li className='m-2'><a>All</a></li>
-                {categories.map(({id, name}) => (
-                    <li key={id} className='m-2'><a>{name}</a></li>
-                ))}                             
-            </ul>
         </div>
     </>
   )
